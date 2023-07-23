@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/ASAP-BYAF/go_pra/for_test"
 	"github.com/ASAP-BYAF/go_pra/namedreturn"
 	"github.com/ASAP-BYAF/go_pra/pkg_func2"
 	"github.com/ASAP-BYAF/go_pra/pkg_multi_result"
@@ -35,5 +36,9 @@ func main() {
 	// 返り値の名前を定義して返す
 	x, y := namedreturn.NamedReturn(2)
 	// fmt.Println("x = ",x,",","y = ",y)
-	fmt.Printf("x = %d, y = %d",x,y)
+	fmt.Printf("x = %d, y = %d\n",x,y)
+
+	// practice of for loop
+	z := for_test.ForLoop()
+	fmt.Printf("z = %d\n", z)
 }

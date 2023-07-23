@@ -13,6 +13,7 @@ import (
 	"github.com/ASAP-BYAF/go_pra/pkg_multi_result"
 	"github.com/ASAP-BYAF/go_pra/pointer"
 	"github.com/ASAP-BYAF/go_pra/struct_test"
+	"github.com/ASAP-BYAF/go_pra/struct_test/struct_pointer"
 	"github.com/ASAP-BYAF/go_pra/switch_test"
 	"github.com/ASAP-BYAF/go_pra/test_func"
 	"github.com/ASAP-BYAF/go_pra/test_pkg"
@@ -73,4 +74,7 @@ func main() {
 	// struct
 	tmp_ver := struct_test.StructFunc(1,2)
 	fmt.Println(tmp_ver)
+
+	// struct_pointer
+	struct_pointer.StructPointer()
 }

@@ -11,6 +11,7 @@ import (
 	"github.com/ASAP-BYAF/go_pra/namedreturn"
 	"github.com/ASAP-BYAF/go_pra/pkg_func2"
 	"github.com/ASAP-BYAF/go_pra/pkg_multi_result"
+	"github.com/ASAP-BYAF/go_pra/pointer"
 	"github.com/ASAP-BYAF/go_pra/switch_test"
 	"github.com/ASAP-BYAF/go_pra/test_func"
 	"github.com/ASAP-BYAF/go_pra/test_pkg"
@@ -64,4 +65,7 @@ func main() {
 
 	// defer_multi LIFO
 	multi.DeferMultiTest()
+
+	// pointer
+	pointer.Pointer()
 }

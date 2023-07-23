@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/ASAP-BYAF/go_pra/for_test"
+	"github.com/ASAP-BYAF/go_pra/if_pra"
 	"github.com/ASAP-BYAF/go_pra/namedreturn"
 	"github.com/ASAP-BYAF/go_pra/pkg_func2"
 	"github.com/ASAP-BYAF/go_pra/pkg_multi_result"
@@ -41,4 +42,8 @@ func main() {
 	// practice of for loop
 	z := for_test.ForLoop()
 	fmt.Printf("z = %d\n", z)
+
+	// practice of if
+	flag := if_pra.IfPra(2.0)
+	fmt.Printf("flag = %v\n", flag)
 }

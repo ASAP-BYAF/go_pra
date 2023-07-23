@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/ASAP-BYAF/go_pra/defer_test"
 	"github.com/ASAP-BYAF/go_pra/for_test"
 	"github.com/ASAP-BYAF/go_pra/if_pra"
 	"github.com/ASAP-BYAF/go_pra/if_pra/short"
@@ -55,5 +56,8 @@ func main() {
 
 	// switch
 	tmp_str = switch_test.SwitchTest()
-	fmt.Printf("Go runs on %s.", tmp_str)
+	fmt.Printf("Go runs on %s.\n", tmp_str)
+
+	// defer
+    defer_test.DeferTest()	
 }

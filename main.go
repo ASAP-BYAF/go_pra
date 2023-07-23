@@ -5,6 +5,7 @@ import (
 
 	"github.com/ASAP-BYAF/go_pra/array"
 	"github.com/ASAP-BYAF/go_pra/array/slice"
+	"github.com/ASAP-BYAF/go_pra/array/slice_pointer"
 	"github.com/ASAP-BYAF/go_pra/defer_test"
 	"github.com/ASAP-BYAF/go_pra/defer_test/multi"
 	"github.com/ASAP-BYAF/go_pra/for_test"
@@ -84,8 +85,13 @@ func main() {
 	tmp_array := array.Array(2)
 	fmt.Println(tmp_array)
 
-	// array
+	// slice
 	tmp_array2 := [6]int{1,2,3,4,5,6}
 	tmp_slice := slice.Slice(tmp_array2)
 	fmt.Println(tmp_slice)
+
+	// slice are like references to arrays
+	var tmp_slice2 []int
+	tmp_array2, tmp_slice, tmp_slice2= slice_pointer.SlicePointer(tmp_array2)
+	fmt.Println(tmp_array2, tmp_slice, tmp_slice2)
 }

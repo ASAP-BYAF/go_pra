@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/ASAP-BYAF/go_pra/array"
 	"github.com/ASAP-BYAF/go_pra/defer_test"
 	"github.com/ASAP-BYAF/go_pra/defer_test/multi"
 	"github.com/ASAP-BYAF/go_pra/for_test"
@@ -77,4 +78,8 @@ func main() {
 
 	// struct_pointer
 	struct_pointer.StructPointer()
+
+	// array
+	tmp_array := array.Array(2)
+	fmt.Println(tmp_array)
 }

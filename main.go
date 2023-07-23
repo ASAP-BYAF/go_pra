@@ -9,6 +9,7 @@ import (
 	"github.com/ASAP-BYAF/go_pra/namedreturn"
 	"github.com/ASAP-BYAF/go_pra/pkg_func2"
 	"github.com/ASAP-BYAF/go_pra/pkg_multi_result"
+	"github.com/ASAP-BYAF/go_pra/switch_test"
 	"github.com/ASAP-BYAF/go_pra/test_func"
 	"github.com/ASAP-BYAF/go_pra/test_pkg"
 	"github.com/ASAP-BYAF/go_pra/test_var"
@@ -51,4 +52,8 @@ func main() {
 	// practice of if with a short statement
 	tmp_flag = short.ShortState(3)
 	fmt.Printf("flag = %v\n", tmp_flag)	
+
+	// switch
+	tmp_str = switch_test.SwitchTest()
+	fmt.Printf("Go runs on %s.", tmp_str)
 }

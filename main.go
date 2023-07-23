@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/ASAP-BYAF/go_pra/defer_test"
+	"github.com/ASAP-BYAF/go_pra/defer_test/multi"
 	"github.com/ASAP-BYAF/go_pra/for_test"
 	"github.com/ASAP-BYAF/go_pra/if_pra"
 	"github.com/ASAP-BYAF/go_pra/if_pra/short"
@@ -60,4 +61,7 @@ func main() {
 
 	// defer
     defer_test.DeferTest()	
+
+	// defer_multi LIFO
+	multi.DeferMultiTest()
 }
